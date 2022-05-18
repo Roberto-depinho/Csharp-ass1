@@ -1,85 +1,106 @@
-﻿
-//Problem Statement 1
+﻿using System;
 
-//using System;
-
-//class Program
-//{
-//    static void Main()
-//    {
-//        Console.WriteLine("Please enter a number");
-
-//        int number1 = Convert.ToInt32(Console.ReadLine());
-
-//        Console.WriteLine("Please enter another number");
-
-//        int number2 = Convert.ToInt32(Console.ReadLine());
-
-//        Console.WriteLine("The sum of your two numbers = {0} ", (number1+number2));
+class Program
+{
+    static void Main()
 
 
-//    }
-//}
 
-////Problem Statement 2 
+    {   
+        string UserChoice = string.Empty;
+              
+        Console.WriteLine("Welcome to Problem Statement 1");
 
-//using System;
+        Console.WriteLine("Please enter a number");
 
-//class Program
-//{
-//    static void Main()
-//    {
-//        int number, multiplier;
+        int number1 = Convert.ToInt32(Console.ReadLine());
 
-//        Console.WriteLine("Please enter a number");
+       
 
-//        number = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Please enter another number");
 
-//        Console.WriteLine("Multiplication of {0} to 4", number);
+        int number2 = Convert.ToInt32(Console.ReadLine());
 
-//        for (multiplier = 1; multiplier <= 4; multiplier++)
-//        {
-//            Console.WriteLine("{0} * {1} = {2}", number, multiplier, (number * multiplier));
-//        }
-//    }
-//}
+        Console.WriteLine("The sum of your two numbers = {0} ", (number1 + number2));
 
+        do
+        {
 
-////Problem Statement 3
+            Console.WriteLine("We have reached the end of problem statement 1. Do you wish to continue to problem statement 2 - Yes or No?");
 
-//using System;
+            UserChoice = Console.ReadLine().ToUpper();
 
-
-//   class PS
-//{
-//    static void Main(string[] args)
-//    {
-//        Console.WriteLine("Hello World! I am amazing");
-//            int n, x, y, z;  //Here we are declaring 4 variables.
-
-//        n = 4; //number of rows (you can put as much as you like)
+            if (UserChoice != "YES" && UserChoice != "NO")
+            {
+                Console.WriteLine("Invalid choice, please say Yes or No");
+            }
+        } while (UserChoice != "YES" && UserChoice != "NO");
 
 
-//        //main outter loop to print as many rows as you'd like 
-//        for (x = 1; x <= n; x++)
-//        {
-//            //print the empty spaces
-//            for (y = 1; y <= n - x; y++) //n-x = 4 in this case 
-//            {
-//                Console.Write(" ");
-//            }
-//            //print the asterix
-//            for (z = 1; z <= x; z++) //if 3 empty space is printed, 2 stars will be printed (thats the logic)
-//            {
-//                Console.Write("* "); //need empty space for perfect pyramid 
-//            }
+        Console.WriteLine("Welcome to Problem Statement 2");
 
-//            //after stars and space is printed, need to go to new line
+        int number, multiplier;
 
-//            Console.WriteLine();
-//        }
-//    }
+        Console.WriteLine("Please enter a number");
+
+        number = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Multiplication of {0} to 4", number);
+
+        for (multiplier = 1; multiplier <= 4; multiplier++)
+        {
+            Console.WriteLine("{0} * {1} = {2}", number, multiplier, (number * multiplier));
+        }
+        do
+        {
+
+            Console.WriteLine("We have reached the end of problem statement 3. Do you wish to continue to problem statement 2 - Yes or No?");
+
+            UserChoice = Console.ReadLine().ToUpper();
+
+            if (UserChoice != "YES" && UserChoice != "NO")
+            {
+                Console.WriteLine("Invalid choice, please say Yes or No");
+            }
+
+        } while (UserChoice != "YES" && UserChoice != "NO");
 
 
-//}
+        Console.WriteLine("Welcome to Problem Statement 3");
+
+
+        int numberofrows, rows, emptyspace, asterix;  //Here we are declaring 4 variables.
+
+        numberofrows = 4; //number of rows (you can put as much as you like)
+
+
+        //main outter loop to print as many rows as you'd like 
+
+        for (rows = 1; rows <= numberofrows; rows++)
+        {
+            //print the empty spaces
+            for (emptyspace = 1; emptyspace <= numberofrows - rows; emptyspace++) //numberofrows-rows = 4 in this case 
+            {
+                Console.Write(" "); //We printing an empty space
+            }
+            //print the asterix
+            for (asterix = 1; asterix <= rows; asterix++) //if 3 empty space is printed, 2 stars will be printed (thats the logic)
+            {
+                Console.Write("* "); //need empty space for perfect pyramid 
+            }
+
+            //after stars and space is printed, need to go to new line
+
+            Console.WriteLine();
+
+
+        }
+        Console.WriteLine("We have reached the end of problem statement 3");
+    }
+}
+
+
+
+
+
 
