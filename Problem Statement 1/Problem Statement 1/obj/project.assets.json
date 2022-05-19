@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\Csharp-ass1\\Problem Statement 1\\Problem Statement 1\\Problem Statement 1.csproj",
-      "projectName": "Problem Statement 1",
-      "projectPath": "C:\\Users\\rober\\source\\repos\\Csharp-ass1\\Problem Statement 1\\Problem Statement 1\\Problem Statement 1.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\Csharp-ass1\\Problem Statement 1\\Problem Statement 1\\Assignment1.csproj",
+      "projectName": "Assignment1",
+      "projectPath": "C:\\Users\\rober\\source\\repos\\Csharp-ass1\\Problem Statement 1\\Problem Statement 1\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rober\\source\\repos\\Csharp-ass1\\Problem Statement 1\\Problem Statement 1\\obj\\",
       "projectStyle": "PackageReference",
